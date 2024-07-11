@@ -1,0 +1,12 @@
+[package]
+name = "libwrap"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate_type = ["cdylib", "staticlib"]
+name = "wrap"
+
+[dependencies]
+uniffi = { version = "0.28.0", features = ["cli", "tokio"] }
+core = { path = "../core" }
