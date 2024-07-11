@@ -260,7 +260,7 @@ dependencies = [
 [[package]]
 name = "candle-core"
 version = "0.6.0"
-source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#6f2be814d19b6e637bd4a467f6a1ad0958491868"
+source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#f9cb07e989b8b0e539802a9e23a4aec50c62d439"
 dependencies = [
  "byteorder",
  "candle-metal-kernels",
@@ -282,7 +282,7 @@ dependencies = [
 [[package]]
 name = "candle-metal-kernels"
 version = "0.6.0"
-source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#6f2be814d19b6e637bd4a467f6a1ad0958491868"
+source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#f9cb07e989b8b0e539802a9e23a4aec50c62d439"
 dependencies = [
  "metal",
  "once_cell",
@@ -293,7 +293,7 @@ dependencies = [
 [[package]]
 name = "candle-nn"
 version = "0.6.0"
-source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#6f2be814d19b6e637bd4a467f6a1ad0958491868"
+source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#f9cb07e989b8b0e539802a9e23a4aec50c62d439"
 dependencies = [
  "candle-core",
  "candle-metal-kernels",
@@ -309,7 +309,7 @@ dependencies = [
 [[package]]
 name = "candle-transformers"
 version = "0.6.0"
-source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#6f2be814d19b6e637bd4a467f6a1ad0958491868"
+source = "git+https://github.com/evilsocket/candle.git?branch=metal_ios_support#f9cb07e989b8b0e539802a9e23a4aec50c62d439"
 dependencies = [
  "byteorder",
  "candle-core",

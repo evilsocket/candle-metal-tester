@@ -62,6 +62,8 @@ fn run_gemm<T: Clone>(
 }
 
 fn test_gemm(device: &Device) {
+    println!("run_gemm 1");
+
     let (b, m, n, k) = (1, 2, 4, 3);
     let lhs_stride = vec![m * k, k, 1];
     let lhs: Vec<f32> = (0..b * m * k).map(|f| f as f32).collect();
@@ -81,6 +83,8 @@ fn test_gemm(device: &Device) {
         approx(results, 4),
         vec![20.0, 23.0, 26.0, 29.0, 56.0, 68.0, 80.0, 92.0]
     );
+
+    println!("run_gemm 2");
 
     let (b, m, n, k) = (2, 2, 4, 3);
     let lhs_stride = vec![m * k, k, 1];
@@ -104,6 +108,8 @@ fn test_gemm(device: &Device) {
             518.0, 548.0, 578.0
         ]
     );
+
+    println!("run_gemm 3");
 
     // OFFSET
     let (b, m, n, k) = (2, 2, 4, 3);
@@ -129,14 +135,17 @@ fn test_gemm(device: &Device) {
 }
 
 pub fn run_metal_tests() {
+    /*
     for dev in Device::all() {
         println!("found {:?}", &dev);
     }
+     */
 
     let device = Device::system_default().unwrap();
 
-    println!("");
-    println!("using {:?}", &device);
+    println!("using: {:?}\n", &device);
 
     test_gemm(&device);
+
+    println!("\nall tests passed.");
 }
