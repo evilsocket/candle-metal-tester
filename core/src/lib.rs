@@ -26,7 +26,7 @@ fn run_gemm<T: Clone>(
     let kernels = Kernels::new();
     let command_queue = device.new_command_queue();
     let command_buffer = command_queue.new_command_buffer();
-    let options = MTLResourceOptions::StorageModeManaged;
+    let options = MTLResourceOptions::StorageModeShared;
 
     let lhs = device.new_buffer_with_data(
         lhs.as_ptr() as *const core::ffi::c_void,

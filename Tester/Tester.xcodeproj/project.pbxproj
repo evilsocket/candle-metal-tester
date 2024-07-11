@@ -13,6 +13,9 @@
 		88EA7A2E2C3F6D9100AAFEE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EA7A2D2C3F6D9100AAFEE2 /* Preview Assets.xcassets */; };
 		88EA7A352C3F6F2B00AAFEE2 /* Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA7A342C3F6F2B00AAFEE2 /* Wrap.swift */; };
 		88EA7A372C3F6F4600AAFEE2 /* Wrap.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EA7A362C3F6F4600AAFEE2 /* Wrap.xcframework */; };
+		88EA7A3C2C3F7CC600AAFEE2 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EA7A392C3F7CC600AAFEE2 /* MetalPerformanceShaders.framework */; };
+		88EA7A3D2C3F7CC600AAFEE2 /* MetalPerformanceShadersGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EA7A3A2C3F7CC600AAFEE2 /* MetalPerformanceShadersGraph.framework */; };
+		88EA7A3E2C3F7CC600AAFEE2 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EA7A3B2C3F7CC600AAFEE2 /* Metal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		88EA7A2D2C3F6D9100AAFEE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88EA7A342C3F6F2B00AAFEE2 /* Wrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrap.swift; sourceTree = "<group>"; };
 		88EA7A362C3F6F4600AAFEE2 /* Wrap.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Wrap.xcframework; sourceTree = SOURCE_ROOT; };
+		88EA7A392C3F7CC600AAFEE2 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		88EA7A3A2C3F7CC600AAFEE2 /* MetalPerformanceShadersGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShadersGraph.framework; path = System/Library/Frameworks/MetalPerformanceShadersGraph.framework; sourceTree = SDKROOT; };
+		88EA7A3B2C3F7CC600AAFEE2 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +36,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EA7A3C2C3F7CC600AAFEE2 /* MetalPerformanceShaders.framework in Frameworks */,
 				88EA7A372C3F6F4600AAFEE2 /* Wrap.xcframework in Frameworks */,
+				88EA7A3E2C3F7CC600AAFEE2 /* Metal.framework in Frameworks */,
+				88EA7A3D2C3F7CC600AAFEE2 /* MetalPerformanceShadersGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				88EA7A252C3F6D9000AAFEE2 /* Tester */,
 				88EA7A242C3F6D9000AAFEE2 /* Products */,
+				88EA7A382C3F7CC600AAFEE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +82,16 @@
 				88EA7A2D2C3F6D9100AAFEE2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88EA7A382C3F7CC600AAFEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88EA7A3B2C3F7CC600AAFEE2 /* Metal.framework */,
+				88EA7A392C3F7CC600AAFEE2 /* MetalPerformanceShaders.framework */,
+				88EA7A3A2C3F7CC600AAFEE2 /* MetalPerformanceShadersGraph.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
